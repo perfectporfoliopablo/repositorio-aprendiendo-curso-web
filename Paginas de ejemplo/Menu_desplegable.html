@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Menu Desplegable</title>
+			<style type="text/css">
+				* {
+					padding: 0px;
+					margin: 0px;
+
+				}
+				header{
+					margin:auto;
+					width:500px;
+					font-family:Arial,Helvetica,Sans-Serif;
+
+				}
+				ul{
+					list-style: none;
+
+				}
+				nav li a{
+					background-color: #000000;
+					color: #FFFFFF;
+					text-decoration: none;
+					padding: 10px 15px;
+					display:block;
+				}
+				.principal{
+					float: left;
+				}
+				nav li a:hover{
+					background-color: #434343;
+					
+					
+				}
+				nav li ul{
+					display: none;
+					position: absolute;
+					min-width: 140px;
+				}
+				nav li:hover > ul{
+					display:block;
+				}
+				nav li ul li{
+					position: relative;
+				}
+				nav li ul li ul{
+					right:  -140px;
+					top: 0px;
+				}
+				nav li ul li a{
+					background-color: #868686
+				}
+				
+			</style>
+	</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class="principal"><a href="#">Inicio</a></li>
+				<li class="principal"><a href="#">Servicios</a>
+					<ul>
+						<li><a href="#">Submenú 1</a></li>
+						<li><a href="#">Submenú 2</a></li>
+						<li><a href="#">Submenú 3</a></li>	
+						<li><a href="#">Submenú 4</a>
+							<ul>
+								<li><a href="#">Submenú 1</a></li>
+								<li><a href="#">Submenú 2</a></li>
+								<li><a href="#">Submenú 3</a></li>
+								<li><a href="#">Submenú 4</a>
+									<ul>
+									<li><a href="#">Submenú 1</a></li>
+									<li><a href="#">Submenú 2</a></li>
+									<li><a href="#">Submenú 3</a></li>
+									<li><a href="#">Submenú 4</a></li>
+									</ul>
+								</li>	
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="principal"><a href="#">Acerca de</a>
+					<ul>
+									<li><a href="#">Submenú 1</a></li>
+									<li><a href="#">Submenú 2</a></li>
+									<li><a href="#">Submenú 3</a></li>
+									<li><a href="#">Submenú 4</a></li>
+					</ul>
+				</li>
+				<li class="principal"><a href="#">Contacto</a></li>
+			</ul>		
+		</nav>
+	</header>
+</body>
+</html>
